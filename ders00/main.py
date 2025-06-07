@@ -1,0 +1,7 @@
+"""
+print() funksiyası
+"""
+
+"""
+input() funksiyası
+"""
