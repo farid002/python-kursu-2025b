@@ -2,11 +2,24 @@
 ---------------------------------KOMMENTLƏR------------------------------------------
 təksətirli və çoxsətirli
 """
+# Bu teksetirli kommentdir
+
+"""
+Bu choxsetirli kommentdir
+bura da
+bura da
+"""
+
+'''
+Bu choxsetirli kommentdir
+bura da
+bura da
+'''
 
 """
 ----------------------------------DƏYİŞKƏNLƏR----------------------------------------
 
-Dəyişkən adları:
+Dəyişkən adları qayda:
     - Hərf və ya alt xətt ilə başlamalıdır.
     - Hərflər, rəqəmlər və alt xəttlərdən ibarət ola bilər (xüsusi simvol və ya boşluq yoxdur).
     - Böyük hərfə həssasdır (myVar və myvar fərqlidir).
@@ -22,9 +35,23 @@ Dəyişkən adları
     - if, else, while, for kimi açar sözlərdən istifadə etməyin.
 """
 
+var1 = 5  # var1 = 5
+var2 = var1 # var1 = 5, var2 = 5
+var1 = 3 # var1 = 3, var2 = 5
+var2 = var1 # var1 = 3, var2 = 3
+
+
+# menali deyishken adlari sechmek
+
+weight = 85
+height = 185
+
+
 """
 Dəyişkən dəyərini yazdırmaq: print()
 """
+
+
 
 """
 -----------------------------------SABİTLƏR-----------------------------------------
@@ -34,24 +61,27 @@ CONSTANT = 100
 BIR_GUNDE_SAAT = 24
 
 
+
 """
 ----------------------------------DATA TİPLƏRİ--------------------------------------
 Ümumi data tipləri: 
     - int (tam sayı)
     - float (onluq sayı)
     - str (sətir)
-    - bool (boolean: doğru və yanlış)
+    - bool (boolean: doğru və yanlış) - True, False
 
     - list, tuple, dict, set (bunlar haqqında daha sonrakı dərslərdə)
 """
+age = 25  # tam sayi - integer
+number_of_students = 5 # tam sayi - integer
+PI = 3.14  # kesrli saylar - float
 
-int_var = -5
-float_var = -0.528
-f_var = -58.5
-is_student = True
-my_var = ""
-my_str = str(my_var)
-my_bool = bool(my_str)
+ad = "55"
+soyad = "Huseynov"
+did_student_pass_exam = False
+
+# print(ad)
+
 
 """
 ------------Riyazi operatorlar-----------
@@ -63,11 +93,29 @@ my_bool = bool(my_str)
     - Üst:          **  2 ** 3  (=8)
     - Tam qismət:   //  14 // 3 (=4)
 """
+a = 5
+b = 3
+c = a ** b
+# print(c)
+
+a2 = "5.8"
+b2 = "3"
+c2 = a2 + b2
+
+# print(type(c2))
+# print(c2)
 
 """
 type() funksiyası
 int()
 float() və round()
-str() və f-string
+str()
 bool()
 """
+c2 = int(float(a2)) + int(b2)
+
+a5 = 5.5
+a5 = round(a5)
+a_str = str(a5)
+
+print(a_str)
