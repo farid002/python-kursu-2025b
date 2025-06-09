@@ -63,3 +63,11 @@ my_bool = bool(my_str)
     - Üst:          **  2 ** 3  (=8)
     - Tam qismət:   //  14 // 3 (=4)
 """
+
+"""
+type() funksiyası
+int()
+float() və round()
+str() və f-string
+bool()
+"""
