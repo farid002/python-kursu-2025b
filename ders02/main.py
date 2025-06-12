@@ -6,6 +6,7 @@ Sətir əməliyyatları:
     - Dilimləmə: İndekslərdən istifadə edərək sub-sətir çıxarın.
     - Funksiya və metodlar:
         - len() - built in
+
         - upper()
         - lower()
         - title()
@@ -17,9 +18,32 @@ Sətir əməliyyatları:
         daha ətraflı aşağıda
 """
 
+my_str = "Salam Necesiniz?"
+# print(my_str)
+# print(my_str.lower())
+# print(my_str.upper())
+# print(len(my_str))
+# print(my_str.capitalize())
+# print(my_str.count("393"))
+# print(my_str.find("0"))
+# print(my_str.replace("Salam", "Hello"))
+# print(my_str.split("x"))
+my_str_2 = "Haradasiniz?"
+# print(my_str_2[5])
+# print(my_str_2[5:9])
+# print(my_str_2[-2])
+# print(my_str_2[::-1])
+# print(my_str_2[::2])
+# print(my_str, my_str_2)
+# print(my_str_2 * 2)
+
 """
 f-string
 """
+my_age = 25
+my_height = 195.56
+# print("Yashiniz: " + str(my_age) + ".")
+# print(f"Yashiniz: {my_age}. Hundurluk: {my_height}.")
 
 """
 Tip çevirmədə əsas xətalar: ValueError, TypeError, IndexError
@@ -27,9 +51,11 @@ Tip çevirmədə əsas xətalar: ValueError, TypeError, IndexError
 # print(int("salam"))
 # print(float("salam"))
 my_list = [1, 2, 3]
-print(my_list[0:2])
+# print(my_list[0:2])
+# print(17 // 3)
 
-print(17 // 3)
+# int("5.5")
+# int([1,2,3])
 
 
 """
@@ -89,8 +115,15 @@ zfill()	                Sətiri başlanğıcda sıfırlarla doldurur
 Şərt ifadələrində müqayisə operatorlarından istifadə olunur:
 `==`, `!=`, `>`, `<`, `>=`, `<=`
 """
+a = 5
+b = 6
+# print(a != b)
+
 
 """
 --------------------------------MƏNTİQİ OPERATORLAR------------------------------------
 and, or, not
 """
+a = "salam"
+b = "sAlAm"
+print(a.upper() == b.upper())
