@@ -1,4 +1,3 @@
-
 """
 Sətir əməliyyatları:
     - Birləşdirmə: "+" operatorundan istifadə edərək sətirləri birləşdirin.
@@ -7,7 +6,6 @@ Sətir əməliyyatları:
     - Dilimləmə: İndekslərdən istifadə edərək sub-sətir çıxarın.
     - Funksiya və metodlar:
         - len() - built in
-
         - upper()
         - lower()
         - title()
@@ -20,18 +18,14 @@ Sətir əməliyyatları:
 """
 
 """
-type() funksiyası
-int()
-float() və round()
-str() və f-string
-bool()
+f-string
 """
 
 """
 Tip çevirmədə əsas xətalar: ValueError, TypeError, IndexError
 """
-# print(int("asdsd"))
-# print(float("asdsd"))
+# print(int("salam"))
+# print(float("salam"))
 my_list = [1, 2, 3]
 print(my_list[0:2])
 
@@ -86,4 +80,17 @@ title()	                Hər sözün ilk hərfini böyük edir
 translate()	            Tərcümə edilmiş sətiri qaytarır
 upper()	                Sətiri böyük hərflərə çevirir
 zfill()	                Sətiri başlanğıcda sıfırlarla doldurur
+"""
+
+
+# GƏLƏN DƏRS
+"""
+--------------------------------MÜQAYİSƏ OPERATORLARI--------------------------------
+Şərt ifadələrində müqayisə operatorlarından istifadə olunur:
+`==`, `!=`, `>`, `<`, `>=`, `<=`
+"""
+
+"""
+--------------------------------MƏNTİQİ OPERATORLAR------------------------------------
+and, or, not
 """
