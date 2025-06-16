@@ -3,6 +3,7 @@
 təksətirli və çoxsətirli
 """
 # Bu teksetirli kommentdir
+my_var = 5
 
 """
 Bu choxsetirli kommentdir
@@ -34,6 +35,15 @@ Dəyişkən adları
     - Dəyişən adları üçün snake_case istifadə edin (məsələn, first_name, total_price).
     - if, else, while, for kimi açar sözlərdən istifadə etməyin.
 """
+x = 5
+y = 2
+x = y
+
+my_print = "Salam"
+murad_yasi = 25
+boy_uzunlugu = 195
+print(murad_yasi / boy_uzunlugu)  # beden indeksi
+
 
 var1 = 5  # var1 = 5
 var2 = var1 # var1 = 5, var2 = 5
@@ -74,13 +84,16 @@ BIR_GUNDE_SAAT = 24
 """
 age = 25  # tam sayi - integer
 number_of_students = 5 # tam sayi - integer
-PI = 3.14  # kesrli saylar - float
+PI = 3.141529  # kesrli saylar - float
+my_float = 5.0
 
-ad = "55"
+ad = "Farid"
 soyad = "Huseynov"
-did_student_pass_exam = False
+student_passed_exam = False
+passing_score = 60
+murad_score = 90
 
-# print(ad)
+print(ad)
 
 
 """
@@ -95,6 +108,8 @@ did_student_pass_exam = False
 """
 a = 5
 b = 3
+
+print(a/b)
 c = a ** b
 # print(c)
 
@@ -114,8 +129,8 @@ bool()
 """
 c2 = int(float(a2)) + int(b2)
 
-a5 = 5.5
+a5 = 5.855
 a5 = round(a5)
-a_str = str(a5)
+print(type(a5))
 
-print(a_str)
+# print(a_str)

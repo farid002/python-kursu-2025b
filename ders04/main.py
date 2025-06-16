@@ -81,5 +81,3 @@ my_str = 'hello'
 for char in my_str:
     print(char)
 """
-
-

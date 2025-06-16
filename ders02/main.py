@@ -56,7 +56,9 @@ my_list = [1, 2, 3]
 
 # int("5.5")
 # int([1,2,3])
-
+x = 10
+x = 5
+print(10 < 5)
 
 """
 METOD / FUNKSIYA	    AÇIQLAMA
@@ -117,6 +119,8 @@ zfill()	                Sətiri başlanğıcda sıfırlarla doldurur
 """
 a = 5
 b = 6
+print(f"{a},{b}: {a == b} a!=b")  #
+
 # print(a != b)
 
 
@@ -126,4 +130,4 @@ and, or, not
 """
 a = "salam"
 b = "sAlAm"
-print(a.upper() == b.upper())
+print(5 > 6 or not 8 == 7)
