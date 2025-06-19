@@ -18,14 +18,17 @@ Həm də istənilən indeksdəki dəyəri dəyişmək mümkündür.
 Məs.: my_str_list[1] = "salam"
 """
 
+
 """
 count()
 append()
 extend()
 pop()                   -> __index attribute-u -> pop(3)
 sort()                  -> reverse attribute-u -> sort(reverse=True)
+"""
 
 
+"""
 Pythonda listlər üçün bəzi vacib built-in funksiyalar:
 del my_mixed_list[3]
 len()
@@ -33,6 +36,7 @@ max()
 min()
 sum()
 """
+
 
 """
 ----------------------------------------FOR DÖNGÜSÜ--------------------------------------------
@@ -48,6 +52,7 @@ start default: 0
 stop mütləq təyin olunmalıdır
 step default: 1
 """
+
 
 """
 Listlərdə for döngüsü
@@ -71,8 +76,8 @@ my_str = "Salam"
 
 for char in my_str:
     print(char)
-
 """
+
 
 """
 string üçün for döngüsü
