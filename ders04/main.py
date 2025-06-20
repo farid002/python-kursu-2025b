@@ -10,6 +10,16 @@ my_str_list = ["salam", "hello", "hallo"]
 my_mixed_list = [15, "hello", True]
 """
 
+empty_list = []
+int_list = [2, 4, 6, 8, 10]
+str_list = ["salam", "hello", "hallo"]
+my_mixed_list = [15, "hello", True, 15.5]
+
+# print(type(str_list))
+
+my_str = "salam"
+# print(str_list[0])
+
 """
 Hər hansı elementi onun indeksi ilə əldə edə bilərik. 
 Məs.: print(my_mixed_list[1])
@@ -17,6 +27,7 @@ Məs.: print(my_mixed_list[1])
 Həm də istənilən indeksdəki dəyəri dəyişmək mümkündür.
 Məs.: my_str_list[1] = "salam"
 """
+str_list[2] = "privet"
 
 
 """
@@ -26,6 +37,33 @@ extend()
 pop()                   -> __index attribute-u -> pop(3)
 sort()                  -> reverse attribute-u -> sort(reverse=True)
 """
+str_list.append("random")
+str_list.append("random")
+str_list.append("bbb")
+str_list.append("ccc")
+
+str_list2= ["ZZ", "yyy", "2"]
+#print(str_list.count("random"))
+str_list.extend(str_list2)
+
+#print(str_list.index("random"))
+#print(str_list.pop(2))
+str_list.sort()
+
+str_list3 = str_list.copy()
+#print(str_list.insert(2, "UUU"))
+#print(str_list3)
+str_list[0] = "__"
+#print(str_list)
+
+a = [
+    [1, 2, 3],
+    [4, 5, 6, 7, 9],
+    [7, 8, 9, 10]
+]
+
+#print(a[1].pop())
+#print(a)
 
 
 """
@@ -52,6 +90,18 @@ start default: 0
 stop mütləq təyin olunmalıdır
 step default: 1
 """
+
+rangeli_list = range(10)
+
+cut_ededler = []
+
+for element in range(1, 100):
+    if element % 2 == 0:
+        cut_ededler.append(element)
+print(cut_ededler)
+
+
+# print(i, end=" ")
 
 
 """
