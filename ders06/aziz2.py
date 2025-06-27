@@ -15,5 +15,3 @@ Təlimatlar:
     - Maksimum uzunluga malik koordinati (!) yazdirin.
 
 """
-
-koordinatlar = [(12.3435, -40.3453), (35,5754, -34.5773), (15,5754, -62.5773), (5,5754, -2.5773)]
