@@ -18,7 +18,7 @@ Sətir əməliyyatları:
         daha ətraflı aşağıda
 """
 
-my_str = "Salam Necesiniz?"
+my_str = "Salam Necesiniz?Necesen"
 # print(my_str)
 # print(my_str.lower())
 # print(my_str.upper())
@@ -27,7 +27,7 @@ my_str = "Salam Necesiniz?"
 # print(my_str.count("393"))
 # print(my_str.find("0"))
 # print(my_str.replace("Salam", "Hello"))
-# print(my_str.split("x"))
+# print(my_str.split(" "))
 my_str_2 = "Haradasiniz?"
 # print(my_str_2[5])
 # print(my_str_2[5:9])
@@ -41,9 +41,9 @@ my_str_2 = "Haradasiniz?"
 f-string
 """
 my_age = 25
-my_height = 195.56
-# print("Yashiniz: " + str(my_age) + ".")
-# print(f"Yashiniz: {my_age}. Hundurluk: {my_height}.")
+my_height = 195.5659
+print("Yashiniz: " + str(my_age) + ".")
+print(f"Yashiniz: {my_age}. Hundurluk: {my_height}.")
 
 """
 Tip çevirmədə əsas xətalar: ValueError, TypeError, IndexError

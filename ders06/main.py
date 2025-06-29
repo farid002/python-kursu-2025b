@@ -94,6 +94,9 @@ my_list = [1, 2, 3, 4, 5, 6]
 result = ['Cüt' if my_number % 2 == 0 else 'Tək' for my_number in my_list]
 print(result)
 
+result = [element for element in range(100, 49, -1)]
+print(result)
+
 
 # klassik metodla:
 my_list = [1, 2, 3, 4, 5, 6]

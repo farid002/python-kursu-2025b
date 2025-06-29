@@ -12,7 +12,7 @@ my_mixed_list = [15, "hello", True]
 
 empty_list = []
 int_list = [2, 4, 6, 8, 10]
-str_list = ["salam", "hello", "hallo"]
+str_list = ["salam", "hello", "hallo", 10]
 my_mixed_list = [15, "hello", True, 15.5]
 
 # print(type(str_list))
@@ -41,14 +41,15 @@ str_list.append("random")
 str_list.append("random")
 str_list.append("bbb")
 str_list.append("ccc")
+str_list.append(15)
 
 str_list2= ["ZZ", "yyy", "2"]
-#print(str_list.count("random"))
+# print(str_list.count("hello"))
 str_list.extend(str_list2)
 
 #print(str_list.index("random"))
 #print(str_list.pop(2))
-str_list.sort()
+# str_list.sort()
 
 str_list3 = str_list.copy()
 #print(str_list.insert(2, "UUU"))
@@ -91,14 +92,13 @@ stop mütləq təyin olunmalıdır
 step default: 1
 """
 
-rangeli_list = range(10)
 
-cut_ededler = []
+matrix = [[1,2,3],[4,5,6],[7,8,9]]
 
-for element in range(1, 100):
-    if element % 2 == 0:
-        cut_ededler.append(element)
-print(cut_ededler)
+for row in matrix:
+    for value in row:
+        print(value ** 2, end=" ")
+
 
 
 # print(i, end=" ")

@@ -114,7 +114,7 @@ c = a ** b
 # print(c)
 
 a2 = "5.8"
-b2 = "3"
+b2 = "salam"
 c2 = a2 + b2
 
 # print(type(c2))

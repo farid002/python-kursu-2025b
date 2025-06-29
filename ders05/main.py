@@ -18,17 +18,16 @@ print("End")
 """
 ----------------------------------------break, continue, pass----------------------------------------
 """
-i = 15
 
-while i >= 5:
-    if i != 12:
-        # print(f"{i}-YES")
-        i = i - 1
-    else:
-        i = i - 1
+a = 100
+while True:
+    if a == 90:
+        a = a - 1
         continue
-
-
+    print(a)
+    if a == 50:
+        break
+    a = a - 1
 
 
 """
