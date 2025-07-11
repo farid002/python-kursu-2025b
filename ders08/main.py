@@ -14,6 +14,27 @@
 - Koddan əvvəl düşünmək üçündür
 """
 
+# istifadeci veren edede qeder 2 ye bolunen ededleri tap
+
+
+"""
+START
+
+max_eded input()
+
+DONGU
+    eded in range 1,max_eded
+    QALIQ = eded % 2
+    EGER QALIQ == 0
+        Print Eded
+    EGER END
+DONGU END
+
+END
+"""
+
+
+
 """
 ----------------------------------------FLOWCHART----------------------------------------
 
