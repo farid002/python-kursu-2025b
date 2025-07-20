@@ -3,16 +3,6 @@ class
 """
 
 """
-import
-as
-*
-from
-venv
-requirements.txt
-"""
-
-# from math import factorial
-"""
 class Avtomobil:
     # Atrobutelar
     tip = "sedan"
@@ -71,3 +61,20 @@ methodlar
 """
 __init__ funksiyası
 """
+
+
+
+
+
+
+#### GELECEK DERSLERDE
+"""
+import
+as
+*
+from
+venv
+requirements.txt
+"""
+
+# from math import factorial
