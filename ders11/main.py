@@ -1,76 +1,114 @@
-"""--------------------------Built-In Python funksiyaları----------------------------"""
+"""
+-----------------------------------FUNKSİYALAR------------------------------------
+def açar sözü
+"""
+
+def salamla(ad, soyad="aa", yas=18):
+    print("salam", ad, soyad)
+    if yas:
+        print("dogum tarixiniz: ", 2025-yas)
+
+salamla("shamil")
 
 """
-len()
-any()
-all()
-map()
-filter()
-enumerate()
+Parametrlər
+Defolt dəyər
 """
-# print(all([True, True, True, True, True, True, False]))
-# from math import factorial
+print("---------")
+def dogum_tarixini_hesabla(yash):
+    dogum_tarixi = 2025 - yash
+    yuzillik = int(dogum_tarixi / 100) + 1
+
+    return dogum_tarixi, yuzillik, "salam"
 
 
-my_list = [1, 2, 4, 5, 3]
-# print(all([number%4==0 for number in my_list]))
-# print(any([number%4==0 for number in my_list]))
-print(my_list)
-# factorial_list = list(map(factorial, my_list))
-# print(factorial_list)
-
-my_list2 = ["1", "salam", "-4", "5aa", "3"]
-print("Filterlənmiş:", list(filter(str.isdigit, my_list2)))
+dt = dogum_tarixini_hesabla(48)
+print(dt)
+#print("yuzilik", yz)
 
 """
-sum()
-max()
-min()
-sorted()
-reversed()
-"""
-print("my max", max(my_list))
-print("my min", min(my_list))
-print("my sum", sum(my_list))
-print("my sorted", sorted(my_list))
-print("my reversed", list(reversed(my_list)))
-
-sorted_list = sorted(my_list)
-
-"""
-type()
-isinstance()
-id()
-"""
-print("===================")
-print(type("Hello"))
-print(type(my_list))
-print(type(False))
-
-print(isinstance(sorted_list, (bool, str, int)))
-
-
-"""
-print()
-input()
+return açar sözü
+çoxsaylı return dəyəri
 """
 
 """
-int()
-float()
-str()
-list()
-dict()
-tuple()
-bool()
+*args - tuple kimi davranış
+**kwargs - dict kimi davranış
+"""
+print("---------")
+"""-----------------------args - bir ulduz - tuple kimi davranir-------------------------"""
+def sum_of_numbers(ad, soyad, *args):
+    my_sum = sum(args)
+    print(ad, soyad, "in yigdigi toplam bal", my_sum)
+
+sum_of_numbers("farid","huseynov",6,5,8,56549,5)
+
+#print("a", "b", "c", "d")
+
+#def print(value1, value2, value3, value4):
+    # print eliyir
+    #pass
+
+"""----------------------kwargs - iki ulduz - dict kimi davranir------------------------"""
+def return_sum(a, b, **kwargs):
+    return a + b, kwargs
+
+print(return_sum(1, 2, ad="farid", soyad="hus", age=25))
+
+def send_email(ad, soyad, mesaj, **kwargs):
+    for k,v in kwargs.items():
+        print(k, "--", v)
+    if kwargs:
+        print(ad, soyad, mesaj, kwargs)
+    else:
+        print(ad, soyad, mesaj)
+
+    return ["asdasd"]
+
+# send_email("Farid", "Hus", "sadsasd", tel=54646, yash=45, peshe="adsd")
+
+"""
+main funksiyası
 """
 
+if __name__=="__main__":
+    a = 5
+    b = 7
+    print(a + b)
+    send_email("asd", "sadsa", "assda")
+    return_sum(23, 123, ad="wqedsa")
+
+
+"""----------------------lambda funksiyaları (ananonim funksiyalar)--------------------------"""
+"""
+my_func = lambda b,c: b*c
+my_func(1, 2)
+"""
+def vurma_normal(b,c):
+    return b*c
+
+vurma = lambda b,c: b*c
+
+print("-------------")
+
+cutleri_tap = lambda eded_list: [eded for eded in eded_list if eded % 2 == 0]
+print(cutleri_tap([1,2,5,9,8,36,45,2]))
+
+
+# vurma(1, 2)
 
 """
-import
-as
-*
-from
-venv
-requirements.txt
+global dəyişkənlər
 """
+
+print("---------")
+
+def func():
+    abc.append(4)
+    print(abc)
+
+if __name__ == "__main__":
+    abc = [1,2,3]
+    func()
+    print(abc)
+
