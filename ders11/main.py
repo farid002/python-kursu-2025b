@@ -85,7 +85,7 @@ my_func = lambda b,c: b*c
 my_func(1, 2)
 """
 def vurma_normal(b,c):
-    return b*c
+    return b*c, b-c
 
 vurma = lambda b,c: b*c
 

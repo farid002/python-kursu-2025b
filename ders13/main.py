@@ -2,26 +2,35 @@
 class
 """
 
-"""
-class Avtomobil:
-    # Atrobutelar
-    tip = "sedan"
-    muherrik_hecmi = 1.5
-    hazirki_suret = 0
 
-    def sureti_artir(self, suret_ferqi):
-        self.hazirki_suret = self.hazirki_suret + suret_ferqi
-    def sureti_azalt(self, suret_ferqi):
-        self.hazirki_suret = self.hazirki_suret - suret_ferqi
+class Car:
+    def __init__(self, teker_sayi=5, brand="sad"):
+        self.at_gucu = 150
+        self.suret = 15
+        self.teker_sayi = teker_sayi
+        self.brand = brand
+        aa = 5
 
-bmw = Avtomobil()
-bmw.sureti_artir(20)
-bmw.sureti_artir(20)
-bmw.sureti_artir(20)
-bmw.sureti_artir(20)
-bmw.sureti_azalt(5)
-print(bmw.hazirki_suret)
-"""
+    def return_all_attributes(self):
+        return [self.at_gucu, self.suret, self.brand]
+
+    def qaz_ver(self):
+        print(self.brand, "Vinnn Vinnn")
+
+    def eylece_bas(self):
+        print("Tormoza basildi")
+
+    def suret_artir(self, suret_ferq: int):
+        self.suret += suret_ferq
+
+shamilin_mashini = Car()
+
+shamilin_mashini.suret += 100
+print(shamilin_mashini.suret)
+shamilin_mashini.suret_artir(50)
+print(shamilin_mashini.suret)
+print(shamilin_mashini.return_all_attributes())
+
 
 class Animal:
     def __init__(self, animal_type, feet_count, name, current_position):
@@ -38,24 +47,23 @@ class Animal:
 
 oghuzs_cat = Animal("mammal", 4, "AAAA", 5)
 oghuzs_cat.jump(20)
-
-
 print(oghuzs_cat.current_position)
 print(oghuzs_cat.name)
+print(oghuzs_cat.make_noise("aa"))
 
 
 """
-snake_case
+snake_case - deyishkenler, funksiyalar, fayl_adlari (modullar)
 camelCaseWord  
-PascalCase / CapitalCamelCase
+PascalCase / CapitalCamelCase - classlar
 """
 
 """
-attributelar
+attributelar - deyishkenler
 """
 
 """
-methodlar
+methodlar - funksiyalar
 """
 
 """

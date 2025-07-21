@@ -9,3 +9,4 @@ nums = [10, 0, -5, 8, 2, -3, 7, 0, 4] listində:
 
 Bu əməliyyatların hamısını main funksiyası içində edin.
 """
+

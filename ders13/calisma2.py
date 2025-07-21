@@ -1,5 +1,5 @@
 """
-  Daha öncə yazdığınız kodu genişləndirirərək,
+  Daha öncə yazdığınız (calisma1.py) kodu genişləndirirərək,
   İstifadəçiyə sonsuz menyu göstərin və bir əməliyyat etməsi üçün hərf daxil etməsini istəyin:
 
   - i: Məlumatları gör (bütün məlumatları versin)
