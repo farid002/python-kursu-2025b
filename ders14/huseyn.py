@@ -13,16 +13,29 @@ Pişik adlı sinif yaradın və ses_cixar() metodunu “Miyov-miyov!” qaytarac
 
 Test edin:
 It və Pişik siniflərindən bir neçə obyekt yaradın və onların ses_cixar() metodunu çağıraraq fərqi göstərin.
-
- 🐶 😺
 """
 
+class Heyvan:
+    def __init__(self, ad: str, yash, cins: str):
+        self.ad = ad
+        self.yash = yash
+        self.cins = cins
 
-"""
-Əlavə:
+class It(Heyvan):
+    def ses_cixar(self):
+        print(f"{self.ad} adli it ses cixardi: Hav-hav!")
 
-It classi uchun indiye qeder yediyi sumuk_sayi attributunu tut
-It class uchun sumuk_ye(sumuk_sayi) funksiyasi yarat
+    def sumuk_ye(self, sumuk_sayi):
+        print(f"{self.ad} adli it {sumuk_sayi} eded sumuk yedi")
 
-Pishik classi uchun big_uzunlugu attribute tut
-"""
+class Pisik(Heyvan):
+    def ses_cixar(self):
+        print(f"{self.ad} adli pisik ses cixardi: Miyov-miyov!")
+
+if __name__ == '__main__':
+    toplan = It("toplan", 3, "erkek")
+    toplan.ses_cixar()
+    toplan.sumuk_ye(5)
+    mestan = Pisik("mestan", 2, "dishi")
+    mestan.ses_cixar()
+
