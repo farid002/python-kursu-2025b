@@ -1,0 +1,5 @@
+ad, yaş, şəhər
+Farhad, 25, Bakı
+Aygün, 30, Gəncə
+Murad, 22, Sumqayıt
+Zəhra, 28, Naxçıvan

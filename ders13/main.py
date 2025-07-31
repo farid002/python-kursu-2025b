@@ -2,57 +2,42 @@
 class
 """
 
-
 class Car:
-    def __init__(self, teker_sayi=5, brand="sad"):
-        self.at_gucu = 150
-        self.suret = 15
-        self.teker_sayi = teker_sayi
+    def __init__(self, brand: str, model: str, speed: int):  # constructor
+        self.speed = speed
         self.brand = brand
-        aa = 5
+        self.model = model
 
-    def return_all_attributes(self):
-        return [self.at_gucu, self.suret, self.brand]
+    def print_all_attr(self):
+        a = 5
+        b = 7
+        print(self.speed, self.brand, self.model, a+b)
 
-    def qaz_ver(self):
-        print(self.brand, "Vinnn Vinnn")
-
-    def eylece_bas(self):
-        print("Tormoza basildi")
-
-    def suret_artir(self, suret_ferq: int):
-        self.suret += suret_ferq
-
-shamilin_mashini = Car()
-
-shamilin_mashini.suret += 100
-print(shamilin_mashini.suret)
-shamilin_mashini.suret_artir(50)
-print(shamilin_mashini.suret)
-print(shamilin_mashini.return_all_attributes())
+    def accel(self, speed_diff):
+        self.speed += speed_diff
+    
+    def brake(self):
+        self.speed = 0
 
 
-class Animal:
-    def __init__(self, animal_type, feet_count, name, current_position):
-        self.animal_type = animal_type
-        self.feet_count = feet_count
-        self.name = name
-        self.current_position = current_position
 
-    def jump(self, distance):
-        self.current_position += distance
+ahmads_car = Car(input("Ahmad's Car Brand"), "C220", 120)
+ahmads_car.print_all_attr()
+ahmads_car.accel(150)
+ahmads_car.print_all_attr()
+ahmads_car.brake()
+ahmads_car.print_all_attr()
 
-    def make_noise(self, noise):
-        print(noise)
+"""
+farids_car = Car("BMW", "X3", 80)
+farids_car.print_all_attr()
+print("--")
+"""
 
-oghuzs_cat = Animal("mammal", 4, "AAAA", 5)
-oghuzs_cat.jump(20)
-print(oghuzs_cat.current_position)
-print(oghuzs_cat.name)
-print(oghuzs_cat.make_noise("aa"))
 
 
 """
+kebap-case
 snake_case - deyishkenler, funksiyalar, fayl_adlari (modullar)
 camelCaseWord  
 PascalCase / CapitalCamelCase - classlar
