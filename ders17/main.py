@@ -15,6 +15,8 @@ deactivate
 """
 requirements.txt
 """
+
+"""
 import os
 import sys
 import math
@@ -22,6 +24,8 @@ import datetime
 import flask
 import django
 import pandas
+"""
+
 """
 Package:
 install - pip install <pkg>
@@ -80,7 +84,16 @@ print(fake.name())
 print(fake.email())
 """
 
+"""
+import
+as
+*
+from
+venv
+requirements.txt
+"""
 
+# from math import factorial
 
 """
 match case

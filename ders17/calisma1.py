@@ -16,8 +16,17 @@
 
 """
 cowsay kitabxanasi yukleyin
-cowsay.cow() funksiyasini icherisine 1 string argumenti vererek ishledin
+cowsay.cow() funksiyasini icherisine 1 ədəd string (uzunluq fərq etmir) argumenti vererek ishledin
 """
+
+
+
+
+
+
+
+
+
 import random
 import os
 import time

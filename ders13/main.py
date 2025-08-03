@@ -54,20 +54,3 @@ methodlar - funksiyalar
 """
 __init__ funksiyası
 """
-
-
-
-
-
-
-#### GELECEK DERSLERDE
-"""
-import
-as
-*
-from
-venv
-requirements.txt
-"""
-
-# from math import factorial

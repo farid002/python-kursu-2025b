@@ -7,3 +7,27 @@ Aşağıdakı iki alt sinfi yaradın:
 
 Dog və Cat siniflərindən obyektler yaradın və make_sound() metodunu çağırın.
 """
+
+
+from abc import ABC, abstractmethod
+
+class Animal(ABC):
+    @abstractmethod
+    def make_sound(self):
+        pass
+
+class Dog(Animal):
+    def make_sound(self):
+        print("Hav-hav!")
+
+class Cat(Animal):
+    def make_sound(self):
+        print("Miav!")
+
+if __name__ == '__main__':
+    toplan = Dog()
+    toplan.make_sound()
+
+    mestan = Cat()
+    mestan.make_sound()
+

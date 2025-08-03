@@ -8,6 +8,84 @@ ABSTRAKSIYA
 from abc import ABC, abstractmethod
 
 class Vehicle(ABC):
+    def __init__(self):
+        self.year = 1970
+        self.speed = 0
+        self.gear = 0
+
+    @abstractmethod
+    def make_noise(self):
+        pass
+
+    @abstractmethod
+    def change_gear(self):
+        pass
+
+    def increase_speed(self, speed):
+        self.speed += speed
+
+
+
+
+class Car(Vehicle):
+    def make_noise(self):
+        print("vinn vinn")
+
+    def change_gear(self):
+        self.gear += 1
+
+class Boat(Vehicle):
+    def make_noise(self):
+        print("suda uzur")
+
+    def change_gear(self):
+        self.gear += 5
+
+class Bicycle(Vehicle):
+    def make_noise(self):
+        print("velosiped")
+
+    def change_gear(self):
+        self.gear += 2
+
+class Airplane(Vehicle):
+    def make_noise(self):
+        print("hava sesi")
+
+    def change_gear(self):
+        print("Airplanes do NOT have gears")
+
+my_car = Car()
+my_car.make_noise()
+my_car.change_gear()
+print(my_car.gear)
+my_car.increase_speed(50)
+my_car.increase_speed(27)
+print(my_car.speed)
+print("----")
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+"""
+from abc import ABC, abstractmethod
+
+class Vehicle(ABC):
     name = ""
     year = 1970
     speed = 0
@@ -44,6 +122,7 @@ car.move()  # Çıxış: Maşın yolda gedir
 
 boat = Boat()
 boat.move()  # Çıxış: Qayıq suda üzür
+"""
 
 """
 ABC Modulu Olmadan Abstraksiya
@@ -61,7 +140,7 @@ print(dog.make_sound())  # Çıxış: Hav-hav!
 
 cat = Animal()  # Bu xətaya səbəb olacaq, çünki `make_sound` metodu təyin edilməyib.
 """
-
+"""
 class Animal:
     def make_sound(self):
         raise NotImplementedError("Bu metod təyin olunmalıdır.")
@@ -75,7 +154,7 @@ print(dog.make_sound())  # Çıxış: Hav-hav!
 
 cat = Animal()
 cat.make_sound()
-
+"""
 
 """
 1. Kodun məcburi strukturlaşdırılması - yəni ana sinifdən (class) törəyən classlar mütləq həmin abstract methodları yenidən yazmalıdır

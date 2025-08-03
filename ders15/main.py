@@ -82,6 +82,10 @@ for obj in my_objs:
 hasattr() - obyektin attributeu ve ya methodu oldugunu yoxla
 """
 
+heyvanlar = [It, Pişik()]
+
+for heyvan in heyvanlar:
+    print(heyvan.ses_cixar())  # Eyni metod, fərqli nəticələr
 
 """
 # Obyektlər yaradaq və polimorfizmi test edək
