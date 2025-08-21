@@ -1,27 +1,3 @@
-"""
-month = 5
-match month:
-    case 1:
-        print("January")
-    case 5:
-        print("February")
-    case _:
-        print("No Match")
-"""
-"""
-number = int(input("Bilmek istediyiniz ayin reqemini daxil edin"))
-
-match number:
-    case 1:
-        print("January")
-    case 2:
-        print("February")
-    case 3:
-        print("March")
-    case _:
-        print("No Match")
-"""
-
 "JSON"
 """
 JSON	    Python
@@ -35,11 +11,12 @@ null	    None
 """
 
 """
-json.load(file)
-json.loads(string)
 json.dump(obj, file)
 json.dumps(obj)
+json.load(file)
+json.loads(string)
 """
+
 """
 import json
 
@@ -58,54 +35,36 @@ with open("data_2.json", "r") as f:
 # with open("data.json", "r") as f:
     # data = json.load(f)
 
+# Əlavə
 
-
-"Dict"
-"lambda"
 
 """
-
-
-
-
-
-
-def print_age_kwargs(age, *args, name="No_Name", **kwargs):
-    print(f"Salam {name}, sizin yash {age}")
-    print(kwargs)
-    for key, value in kwargs.items():
-        print(f"{key}: {value}")
-
-age = int(input("yash 10-99 arasi"))
-print_age_kwargs(age, brother_name="Miro", fax_number="+23434", father_name="Firo", phone_number="asdsad")
-
-
-def print_age_args(age, *args, name="No_Name"):
-    print(f"Salam {name}-{age}, sizin yash {args}")
-
-age = int(input("yash 10-99 arasi"))
-print_age_args(age,  "+23434", "asd", "sadddd", 132, 2)
+import random
+print(random.random()) # 0.0 – 1.0 arasında təsadüfi float
+print(random.randint(1,10)) # 1 – 10 arasında təsadüfi integer (daxil)
+print(random.uniform(5,15)) # 5 – 15 arasında təsadüfi float
 """
-def multiple_by_two(x):
-    return x * 2
 
-multiple_by_two = lambda x : x * 2
+"""
+import random
+fruits = ["apple", "banana", "cherry", "date"]
+print(random.choice(fruits)) # 1 təsadüfi element
+print(random.sample(fruits, 2)) # 2 fərqli element (unique)
+print(random.choices(fruits, k=3)) # 3 element (təkrar ola bilər)
+random.shuffle(fruits) # list-i qarışdırır (yerində)
+print(fruits)
+"""
 
-my_list = [1, 2, 3]
+"""
+import secrets
+fruits = ["apple", "banana", "cherry", "date"]
+print(secrets.choice(fruits)) # təhlükəsiz seçim (random.choice əvəzinə)
+"""
 
-map(multiple_by_two, )
-
-print(list(map(lambda x: x*2, my_list)))
-
-
-
-
-
-
-
-
-
-
-
-"kwargs"
-"args"
+"Tokenlər"
+"""
+import secrets
+print(secrets.token_bytes(16)) # təsadüfi byte string (16 byte)
+print(secrets.token_hex(16)) # hex string (32 simvol)
+print(secrets.token_urlsafe(16)) # URL-də təhlükəsiz istifadə oluna bilən token
+"""

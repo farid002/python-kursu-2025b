@@ -22,4 +22,15 @@ Print edilən dict belə görünməlidir:
     }
 }
 """
-
+my_dict = {}
+with open("data.txt", "r") as my_file:
+    data_list = my_file.readlines()
+    for line in data_list[1:]:
+        ad = line.split(", ")[0].strip()
+        yash = line.split(", ")[1].strip()
+        yer = line.split(", ")[2].strip()
+        my_dict[ad]={
+            'yaş': int(yash),
+            'şəhər': yer
+        }
+    print(my_dict)

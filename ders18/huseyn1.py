@@ -23,3 +23,16 @@ Print edilən dict belə görünməlidir:
 }
 """
 
+if __name__ == '__main__':
+    my_dict = {}
+    my_file = open("data.txt", "r")
+    lines = my_file.readlines()
+    my_file.close()
+
+    header = lines[0].strip().split(', ')
+
+    for line in lines[1:]:
+        values = line.strip().split(', ')
+        my_dict[values[0]] = {header[1] : int(values[1]), header[2] : values [2]}
+
+    print(my_dict)

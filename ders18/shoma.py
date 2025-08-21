@@ -22,4 +22,14 @@ Print edilən dict belə görünməlidir:
     }
 }
 """
+data_dict={}
+with open('data.txt') as file :
+    lines = file.readlines()
+for line in lines[1:]:
+    name, age, city = line.strip().split(', ')
+    data_dict[name]= {
+        'yash':int(age),
+        'city':city
 
+    }
+print(data_dict)
